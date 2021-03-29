@@ -58,12 +58,12 @@ document.querySelector("#slider").addEventListener("click", function(){
 document.querySelector("#mute").addEventListener("click", function(){
 	if (video.muted){
 		console.log("unmuted");
-		this.innerHTML = "unmute";
+		this.innerHTML = "Muted";
 		video.muted = false;
 	}
 	else{
 		console.log("muted");
-		this.innerHTML = "Mute";
+		this.innerHTML = "Unmute";
 		video.muted = true;
 	}
 });
@@ -74,7 +74,6 @@ document.querySelector("#skip").addEventListener("click", function(){
 	{
 		console.log("skip");
 		video.currentTime += 15;
-		video.play();
 	}
 	else{
 		video.currentTime = 0;
